@@ -11,6 +11,5 @@ func CreateMarkdown(text string, fileName string) error {
 	if err != nil {
 		return fmt.Errorf("\nERROR: CreateMarkdown: %v\n\n", err)
 	}
-	
 	return nil
 }
