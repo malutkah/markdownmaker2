@@ -1,4 +1,4 @@
-package somepackage
+package settings
 
 const (
 	_ = iota

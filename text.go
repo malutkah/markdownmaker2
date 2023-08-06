@@ -2,6 +2,8 @@ package somepackage
 
 import (
 	"strings"
+	
+	"github.com/malutkah/markdownmaker2/settings"
 )
 
 // create markdown header
@@ -27,13 +29,13 @@ func Image(alt string, src string) string {
 
 func Text(text string, style int) string {
 	switch style {
-	case Paragraph:
+	case settings.Paragraph:
 		return Break + text + Break
-	case Bold:
+	case settings.Bold:
 		return Break + "**" + text + "**" + Break
-	case Italic:
+	case settings.Italic:
 		return Break + "_" + text + "_" + Break
-	case Strike:
+	case settings.Strike:
 		return Break + "~~" + text + "~~" + Break
 	default:
 		return Break + text + Break

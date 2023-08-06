@@ -2,6 +2,8 @@ package somepackage
 
 import (
 	"log"
+	
+	"github.com/malutkah/markdownmaker2/settings"
 )
 
 func Test() {
@@ -14,11 +16,11 @@ func Test() {
 		{"Jane Doe", "27", "San Francisco"},
 	}
 	
-	text := Header(Title, "Wasmachensachen")
-	text += Header(Sub, "Hi")
-	text += Header(Header1, "Header 1")
+	text := Header(settings.Title, "Wasmachensachen")
+	text += Header(settings.Sub, "Hi")
+	text += Header(settings.Header1, "Header 1")
 	text += Line
-	text += Text("dayumm", Strike)
+	text += Text("dayumm", settings.Strike)
 	text += Line
 	text += OrderedList(list)
 	text += UnorderedList([]string{"some", "stupid", "shit"})
