@@ -12,7 +12,7 @@ const (
 
 const (
 	_ = iota
-	Text
+	Paragraph
 	Italic
 	Bold
 	Strike
